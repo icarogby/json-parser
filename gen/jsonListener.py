@@ -17,12 +17,12 @@ class jsonListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by jsonParser#nomes.
-    def enterNomes(self, ctx:jsonParser.NomesContext):
+    # Enter a parse tree produced by jsonParser#texto.
+    def enterTexto(self, ctx:jsonParser.TextoContext):
         pass
 
-    # Exit a parse tree produced by jsonParser#nomes.
-    def exitNomes(self, ctx:jsonParser.NomesContext):
+    # Exit a parse tree produced by jsonParser#texto.
+    def exitTexto(self, ctx:jsonParser.TextoContext):
         pass
 
 

@@ -14,8 +14,8 @@ class jsonVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by jsonParser#nomes.
-    def visitNomes(self, ctx:jsonParser.NomesContext):
+    # Visit a parse tree produced by jsonParser#texto.
+    def visitTexto(self, ctx:jsonParser.TextoContext):
         return self.visitChildren(ctx)
 
 
