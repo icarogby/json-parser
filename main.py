@@ -1,17 +1,16 @@
 from antlr4 import *
-from gen.jsonLexer import jsonLexer
-from gen.jsonParser import jsonParser
+from gen.gramaticaLexer import gramaticaLexer
+from gen.gramaticaParser import gramaticaParser
 
 if __name__ == '__main__':
-    data = FileStream('input.json')
-    lexer = jsonLexer(data)
+    #data = FileStream()
+    data = FileStream("test-schema.json")
+    lexer = gramaticaLexer(data)
 
     for tok in lexer.getAllTokens():
         print(tok.text, tok.type)
-
     lexer.reset()
     stream = CommonTokenStream(lexer)
-    parser = jsonParser(stream)
-
-    tree = parser.init()
+    parser = gramaticaParser(stream)
+    tree = parser.start()
     print(tree.toStringTree())
