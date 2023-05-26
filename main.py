@@ -3,7 +3,7 @@ from gen.jsonLexer import jsonLexer
 from gen.jsonParser import jsonParser
 
 if __name__ == '__main__':
-    data = FileStream('input.json')
+    data = FileStream('input1.json')
     lexer = jsonLexer(data)
 
     for tok in lexer.getAllTokens():
