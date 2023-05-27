@@ -1,6 +1,7 @@
 {
-  "number_1" : 210,
+  "number_1" : 210.12545,
   "number_2" : 215,
-  "number_3" : 21.05,
+  "number_3" : {},
+  "xx": [ ],
   "number_4" : 10.05
 }
