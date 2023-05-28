@@ -1,7 +1,7 @@
 grammar json;
 
 init: value;
-value:  STR | num | BOOL | NULL | arr |obj ;
+value:  STR | num | BOOL | NULL | arr | obj ;
 
 obj: '{' data (',' data)* '}' | '{' '}';
 data: key ':' value;
