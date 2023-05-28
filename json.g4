@@ -19,5 +19,3 @@ BOOL: 'true' | 'false';
 NULL: 'null';
 STR: '"' CHAR+ '"' | '"' '"';
 CHAR: [a-záàâãäéèêëíìîïóòôõöúùûüçA-ZÁÀÂÃÄÉÈÊËÍÌÎÏÓÒÔÕÖÚÙÛÜÇ 0-9_,.:;/|] | '[' | ']' | '\\' | '\'';
-
-/*((SIMB|COLCHETE|BARRA)*|PAL+) ((SIMB|COLCHETE|BARRA)* PAL+| PAL* SIMB+)*;
