@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="abede8fb-0709-47b1-95db-4dd7c6d5e76f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/jsonLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/jsonLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/jsonLexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen/jsonLexer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input1.json" beforeDir="false" afterPath="$PROJECT_DIR$/input1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input2.json" beforeDir="false" afterPath="$PROJECT_DIR$/input2.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input3.json" beforeDir="false" afterPath="$PROJECT_DIR$/input3.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json.g4" beforeDir="false" afterPath="$PROJECT_DIR$/json.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +57,7 @@
       <workItem from="1685280268281" duration="452000" />
       <workItem from="1685281922739" duration="614000" />
       <workItem from="1685288152031" duration="10882000" />
+      <workItem from="1685311258504" duration="1447000" />
     </task>
     <servers />
   </component>

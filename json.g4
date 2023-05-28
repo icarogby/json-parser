@@ -13,7 +13,7 @@ arr: '[' value (',' value)* ']' | '[' ']';
 WS: [ \t\r\n]+ -> skip;
 INT: '-'? '0' EXP?| '-'? [1-9][0-9]* EXP?;
 FLOAT: '-'? '0.'[0-9]+ EXP? | '-'? [1-9][0-9]*'.'[0-9]+ EXP?;
-EXP: 'e'ALTINT;
+EXP: [eE]ALTINT;
 ALTINT: [+-]? [0-9]+;
 BOOL: 'true' | 'false';
 NULL: 'null';

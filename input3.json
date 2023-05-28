@@ -1,15 +1,15 @@
 {
-  "Workers" : [
+  "Workers": [
     {
-     "na@@\wme" : "Jack",
-     "age" : 0.123456789012345678,
-     "Works At" : "Tech News"
-    ,
+      "name": "Jack",
+      "age": 0.123456789012345678,
+      "Works At": "Tech News"
+    },
 
     {
-     "name" : "Miller",
-     "age" : -0,
-     "Works At" : "IT Day"
+     "name": "Miller",
+     "age": -0,
+     "Works At": "IT Day"
     }
 
   ]
