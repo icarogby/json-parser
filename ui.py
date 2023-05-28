@@ -1,4 +1,5 @@
-from PyQt5.QtWidgets import QMainWindow, QLabel, QPushButton, QListWidget, QFileDialog
+from PyQt5.QtWidgets import QMainWindow, QLabel, QPushButton, QListWidget, QFileDialog, QListWidgetItem
+from PyQt5.QtCore import Qt
 
 from antlr4 import *
 from gen.jsonLexer import jsonLexer
@@ -68,6 +69,14 @@ class Window(QMainWindow):
         lexer = jsonLexer(data)
 
         for tok in lexer.getAllTokens():
-            token_type = types(tok.type)
-            token = f'Token: {tok.text}\nTipo: {token_type}\n'
-            self.msg_list.addItem(token)
+            tipo = types(tok.type)
+            str1 = f'Token:'
+            str2 = f'{tok.text}'
+            str3 = f'Tipo: {tok.type} - {tipo}\n---------------------------------'
+
+            str2 = QListWidgetItem(str2)
+            str2.setForeground(Qt.red)
+
+            self.msg_list.addItem(str1)
+            self.msg_list.addItem(str2)
+            self.msg_list.addItem(str3)
