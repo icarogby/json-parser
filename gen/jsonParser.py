@@ -10,7 +10,7 @@ else:
 
 def serializedATN():
     return [
-        4,1,15,63,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,16,63,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,3,1,23,8,1,1,2,1,2,1,2,1,2,5,2,
         29,8,2,10,2,12,2,32,9,2,1,2,1,2,1,2,1,2,3,2,38,8,2,1,3,1,3,1,3,1,
         3,1,4,1,4,1,5,1,5,1,6,1,6,1,6,1,6,5,6,52,8,6,10,6,12,6,55,9,6,1,
@@ -48,7 +48,8 @@ class jsonParser ( Parser ):
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "WS", "INT", 
-                      "FLOAT", "EXP", "ALTINT", "BOOL", "NULL", "STR", "CHAR" ]
+                      "FLOAT", "EXP", "ALTINT", "BOOL", "NULL", "STR", "CHAR", 
+                      "ESC" ]
 
     RULE_init = 0
     RULE_value = 1
@@ -76,6 +77,7 @@ class jsonParser ( Parser ):
     NULL=13
     STR=14
     CHAR=15
+    ESC=16
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
